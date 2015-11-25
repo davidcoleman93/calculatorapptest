@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/displayView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MRC"
+        android:id="@+id/mrc_button"
+        android:layout_below="@+id/displayView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MR+"
+        android:id="@+id/m_plus_button"
+        android:layout_alignTop="@+id/mrc_button"
+        android:layout_toRightOf="@+id/mrc_button"
+        android:layout_toEndOf="@+id/mrc_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MR"
+        android:id="@+id/mr_button"
+        android:layout_alignTop="@+id/m_plus_button"
+        android:layout_toRightOf="@+id/m_plus_button"
+        android:layout_toEndOf="@+id/m_plus_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/seven_button"
+        android:onClick="seven"
+        android:layout_below="@+id/mrc_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/eight_button"
+        android:onClick="eight"
+        android:layout_alignTop="@+id/seven_button"
+        android:layout_alignLeft="@+id/m_plus_button"
+        android:layout_alignStart="@+id/m_plus_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:onClick="nine"
+        android:id="@+id/nine_button"
+        android:layout_alignTop="@+id/eight_button"
+        android:layout_toRightOf="@+id/m_plus_button"
+        android:layout_toEndOf="@+id/m_plus_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:onClick="four"
+        android:id="@+id/four_button"
+        android:layout_below="@+id/seven_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:onClick="five"
+        android:id="@+id/five_button"
+        android:layout_below="@+id/seven_button"
+        android:layout_toRightOf="@+id/seven_button"
+        android:layout_toEndOf="@+id/seven_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:onClick="six"
+        android:id="@+id/six_button"
+        android:layout_below="@+id/nine_button"
+        android:layout_alignLeft="@+id/nine_button"
+        android:layout_alignStart="@+id/nine_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:onClick="one"
+        android:id="@+id/one_button"
+        android:layout_below="@+id/four_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:onClick="two"
+        android:id="@+id/two_button"
+        android:layout_alignTop="@+id/one_button"
+        android:layout_toRightOf="@+id/one_button"
+        android:layout_toEndOf="@+id/one_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="three"
+        android:id="@+id/three_button"
+        android:layout_alignTop="@+id/two_button"
+        android:layout_alignLeft="@+id/six_button"
+        android:layout_alignStart="@+id/six_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/zero_button"
+        android:onClick="zero"
+        android:layout_below="@+id/one_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:onClick="decimalPoint"
+        android:id="@+id/decimal_button"
+        android:layout_below="@+id/one_button"
+        android:layout_toRightOf="@+id/one_button"
+        android:layout_toEndOf="@+id/one_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+/-"
+        android:onClick="posNegButton"
+        android:id="@+id/pos_neg_button"
+        android:layout_alignTop="@+id/decimal_button"
+        android:layout_alignLeft="@+id/three_button"
+        android:layout_alignStart="@+id/three_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CE"
+        android:onClick="clearButton"
+        android:id="@+id/ce_button"
+        android:layout_alignTop="@+id/mr_button"
+        android:layout_toRightOf="@+id/mr_button"
+        android:layout_toEndOf="@+id/mr_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clr"
+        android:onClick="resetButton"
+        android:id="@+id/reset_button"
+        android:layout_above="@+id/nine_button"
+        android:layout_toRightOf="@+id/ce_button"
+        android:layout_toEndOf="@+id/ce_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:onClick="percentButton"
+        android:id="@+id/percent_button"
+        android:layout_above="@+id/six_button"
+        android:layout_toRightOf="@+id/mr_button"
+        android:layout_toEndOf="@+id/mr_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:onClick="multiplyButton"
+        android:id="@+id/multiply_button"
+        android:layout_below="@+id/nine_button"
+        android:layout_toRightOf="@+id/six_button"
+        android:layout_toEndOf="@+id/six_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:onClick="divideButton"
+        android:id="@+id/divide_button"
+        android:layout_below="@+id/percent_button"
+        android:layout_toRightOf="@+id/multiply_button"
+        android:layout_toEndOf="@+id/multiply_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:onClick="plusButton"
+        android:id="@+id/plus_button"
+        android:layout_below="@+id/six_button"
+        android:layout_toRightOf="@+id/six_button"
+        android:layout_toEndOf="@+id/six_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:onClick="minusButton"
+        android:id="@+id/minus_button"
+        android:layout_below="@+id/divide_button"
+        android:layout_alignLeft="@+id/divide_button"
+        android:layout_alignStart="@+id/divide_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:onClick="equalsButton"
+        android:id="@+id/equals_button"
+        android:layout_alignTop="@+id/pos_neg_button"
+        android:layout_toRightOf="@+id/pos_neg_button"
+        android:layout_toEndOf="@+id/pos_neg_button" />
+
+</RelativeLayout>
